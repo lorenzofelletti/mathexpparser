@@ -1,0 +1,4 @@
+EXP ::= TERM(('+'|'-') TERM)*
+TERM ::= (TERM '*'|'/')* POW
+POW ::= FACTOR('^'POW)*
+FACTOR ::= num | '(' EXP ')'
