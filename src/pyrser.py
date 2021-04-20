@@ -19,7 +19,6 @@ class Pyrser:
     def parse(self, exp):
         def next_tkn_initializer(exp):
             tokens = self.lxr.scan(exp=exp)
-            print(tokens)
 
             i = -1
 
