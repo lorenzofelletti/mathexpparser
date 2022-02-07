@@ -59,5 +59,5 @@ def test_unary_minus(parser):
     assert parser.parse('-3-(-3)+-5').evaluate() == -5
 
 
-def no_prob_with_whitespace(parser):
+def test_no_prob_with_whitespace(parser):
     assert parser.parse('  1 +  2   ').evaluate() == 3
